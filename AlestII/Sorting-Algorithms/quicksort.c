@@ -3,7 +3,7 @@
 #include <time.h>
 
 #define MAX 10000
-
+long long int count = 0;
 void quicksort(int data[], int tam);
 void _qsort(int data[], int p, int r);
 int partition(int data[], int p, int r);
@@ -28,6 +28,7 @@ int partition(int data[], int p, int r) {
         if(data[j] <= data[r]) {
             swap(data,j,q);
             q++;
+            
         }
     }
     swap(data,r,q);
@@ -38,21 +39,68 @@ void swap(int data[], int p1, int p2) {
     int tmp = data[p1];
     data[p1] = data[p2];
     data[p2] = tmp;
+    count ++;
 }
 
 int main()
 {
-    int data[MAX];
-
-    for(int i=0; i<MAX; i++)
-        data[i] = rand()%(MAX*10);
-
-    long start = clock();
-    quicksort(data, MAX);
-    long end = clock();
-
-    //for(int i=0; i<MAX; i++)
-    //    printf("%5d", data[i]);
-    //printf("\n");
-    printf("Tempo para %d elementos: %ld ns\n", MAX, (end-start));
+    FILE *arquivo = fopen("quicksort.txt", "w");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    srand(time(NULL));
+    
+    fprintf(arquivo,"Randomizado:\n");
+    for (int tam = 0; tam < 21000; tam += 1000) {
+        int *data = (int *)malloc((MAX + tam) * sizeof(int));
+        if (data == NULL) {
+            printf("Erro ao alocar memória.\n");
+            return 1;
+        }
+        for (int i = 0; i < MAX + tam; i++) {
+            data[i] = rand() % (MAX * 10);
+        }
+        quicksort(data, MAX + tam);
+        fprintf(arquivo,"Tamanho: %d - Trocas: %lld\n", MAX + tam, count);
+        free(data);
+    }
+    fprintf(arquivo,"\n\n");
+    count = 0;
+    
+    fprintf(arquivo,"Ordenado:\n");
+    for (int tam = 0; tam < 21000; tam += 1000) {
+        int *data = (int *)malloc((MAX + tam) * sizeof(int));
+        if (data == NULL) {
+            printf("Erro ao alocar memória.\n");
+            return 1;
+        }
+        for (int i = 0; i < MAX + tam; i++) {
+            data[i] = i;
+        }
+        quicksort(data, MAX + tam);
+        fprintf(arquivo,"Tamanho: %d - Trocas: %lld\n", MAX + tam, count);
+        free(data);
+    }
+    fprintf(arquivo,"\n\n");
+    count = 0;
+    
+    fprintf(arquivo,"Inverso:\n");
+    for (int tam = 0; tam < 21000; tam += 1000) {
+        int *data = (int *)malloc((MAX + tam) * sizeof(int));
+        if (data == NULL) {
+            printf("Erro ao alocar memória.\n");
+            return 1;
+        }
+        for (int i = 0; i < MAX + tam; i++) {
+            data[i] = MAX + tam - i;
+        }
+        quicksort(data, MAX + tam);
+        fprintf(arquivo,"Tamanho: %d - Trocas: %lld\n", MAX + tam, count);
+        free(data);
+    }
+    printf("\n\n");
+    count = 0;
+    
+    return 0;
 }

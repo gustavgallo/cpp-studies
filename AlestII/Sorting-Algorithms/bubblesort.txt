@@ -1,0 +1,70 @@
+Randomizado:
+Tamanho: 10000 - Trocas: 24820323
+Tamanho: 11000 - Trocas: 54988450
+Tamanho: 12000 - Trocas: 90971115
+Tamanho: 13000 - Trocas: 133308443
+Tamanho: 14000 - Trocas: 182347007
+Tamanho: 15000 - Trocas: 238964894
+Tamanho: 16000 - Trocas: 302948817
+Tamanho: 17000 - Trocas: 375316928
+Tamanho: 18000 - Trocas: 455256225
+Tamanho: 19000 - Trocas: 544832066
+Tamanho: 20000 - Trocas: 644768323
+Tamanho: 21000 - Trocas: 755089527
+Tamanho: 22000 - Trocas: 875043766
+Tamanho: 23000 - Trocas: 1007536787
+Tamanho: 24000 - Trocas: 1151939329
+Tamanho: 25000 - Trocas: 1308188941
+Tamanho: 26000 - Trocas: 1478123611
+Tamanho: 27000 - Trocas: 1660340175
+Tamanho: 28000 - Trocas: 1856682258
+Tamanho: 29000 - Trocas: 2066895383
+Tamanho: 30000 - Trocas: 2292848376
+
+
+Ordenado:
+Tamanho: 10000 - Trocas: 0
+Tamanho: 11000 - Trocas: 0
+Tamanho: 12000 - Trocas: 0
+Tamanho: 13000 - Trocas: 0
+Tamanho: 14000 - Trocas: 0
+Tamanho: 15000 - Trocas: 0
+Tamanho: 16000 - Trocas: 0
+Tamanho: 17000 - Trocas: 0
+Tamanho: 18000 - Trocas: 0
+Tamanho: 19000 - Trocas: 0
+Tamanho: 20000 - Trocas: 0
+Tamanho: 21000 - Trocas: 0
+Tamanho: 22000 - Trocas: 0
+Tamanho: 23000 - Trocas: 0
+Tamanho: 24000 - Trocas: 0
+Tamanho: 25000 - Trocas: 0
+Tamanho: 26000 - Trocas: 0
+Tamanho: 27000 - Trocas: 0
+Tamanho: 28000 - Trocas: 0
+Tamanho: 29000 - Trocas: 0
+Tamanho: 30000 - Trocas: 0
+
+
+Inverso:
+Tamanho: 10000 - Trocas: 49995000
+Tamanho: 11000 - Trocas: 110489500
+Tamanho: 12000 - Trocas: 182483500
+Tamanho: 13000 - Trocas: 266977000
+Tamanho: 14000 - Trocas: 364970000
+Tamanho: 15000 - Trocas: 477462500
+Tamanho: 16000 - Trocas: 605454500
+Tamanho: 17000 - Trocas: 749946000
+Tamanho: 18000 - Trocas: 911937000
+Tamanho: 19000 - Trocas: 1092427500
+Tamanho: 20000 - Trocas: 1292417500
+Tamanho: 21000 - Trocas: 1512907000
+Tamanho: 22000 - Trocas: 1754896000
+Tamanho: 23000 - Trocas: 2019384500
+Tamanho: 24000 - Trocas: 2307372500
+Tamanho: 25000 - Trocas: 2619860000
+Tamanho: 26000 - Trocas: 2957847000
+Tamanho: 27000 - Trocas: 3322333500
+Tamanho: 28000 - Trocas: 3714319500
+Tamanho: 29000 - Trocas: 4134805000
+Tamanho: 30000 - Trocas: 4584790000

@@ -3,7 +3,7 @@
 #include <time.h>
 
 #define MAX 10000
-int count = 0;
+long long int count = 0;
 
 void sort(int values[], int total);
 void mergesort2(int values[], int low, int high, int helper[]);
@@ -48,11 +48,17 @@ void merge(int values[], int low, int middle, int high, int helper[]) {
     }
 }
 
-int main() {
+int main()
+{
+    FILE *arquivo = fopen("mergesort.txt", "w");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
     srand(time(NULL));
     
-    printf("Randomizado:\n");
-    for (int tam = 0; tam < 10000; tam += 1000) {
+    fprintf(arquivo,"Randomizado:\n");
+    for (int tam = 0; tam < 21000; tam += 1000) {
         int *data = (int *)malloc((MAX + tam) * sizeof(int));
         if (data == NULL) {
             printf("Erro ao alocar memória.\n");
@@ -62,14 +68,14 @@ int main() {
             data[i] = rand() % (MAX * 10);
         }
         sort(data, MAX + tam);
-        printf("Tamanho: %d - Trocas: %d\n", MAX + tam, count);
+        fprintf(arquivo,"Tamanho: %d - Trocas: %lld\n", MAX + tam, count);
         free(data);
     }
-    printf("\n\n");
+    fprintf(arquivo,"\n\n");
     count = 0;
     
-    printf("Ordenado:\n");
-    for (int tam = 0; tam < 10000; tam += 1000) {
+    fprintf(arquivo,"Ordenado:\n");
+    for (int tam = 0; tam < 21000; tam += 1000) {
         int *data = (int *)malloc((MAX + tam) * sizeof(int));
         if (data == NULL) {
             printf("Erro ao alocar memória.\n");
@@ -79,14 +85,14 @@ int main() {
             data[i] = i;
         }
         sort(data, MAX + tam);
-        printf("Tamanho: %d - Trocas: %d\n", MAX + tam, count);
+        fprintf(arquivo,"Tamanho: %d - Trocas: %lld\n", MAX + tam, count);
         free(data);
     }
-    printf("\n\n");
+    fprintf(arquivo,"\n\n");
     count = 0;
     
-    printf("Inverso:\n");
-    for (int tam = 0; tam < 10000; tam += 1000) {
+    fprintf(arquivo,"Inverso:\n");
+    for (int tam = 0; tam < 21000; tam += 1000) {
         int *data = (int *)malloc((MAX + tam) * sizeof(int));
         if (data == NULL) {
             printf("Erro ao alocar memória.\n");
@@ -96,7 +102,7 @@ int main() {
             data[i] = MAX + tam - i;
         }
         sort(data, MAX + tam);
-        printf("Tamanho: %d - Trocas: %d\n", MAX + tam, count);
+        fprintf(arquivo,"Tamanho: %d - Trocas: %lld\n", MAX + tam, count);
         free(data);
     }
     printf("\n\n");

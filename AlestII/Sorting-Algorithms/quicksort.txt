@@ -1,0 +1,70 @@
+Randomizado:
+Tamanho: 10000 - Trocas: 80143
+Tamanho: 11000 - Trocas: 172857
+Tamanho: 12000 - Trocas: 268253
+Tamanho: 13000 - Trocas: 398289
+Tamanho: 14000 - Trocas: 532630
+Tamanho: 15000 - Trocas: 661773
+Tamanho: 16000 - Trocas: 803905
+Tamanho: 17000 - Trocas: 966001
+Tamanho: 18000 - Trocas: 1134707
+Tamanho: 19000 - Trocas: 1292304
+Tamanho: 20000 - Trocas: 1471209
+Tamanho: 21000 - Trocas: 1675925
+Tamanho: 22000 - Trocas: 1908487
+Tamanho: 23000 - Trocas: 2140245
+Tamanho: 24000 - Trocas: 2366671
+Tamanho: 25000 - Trocas: 2586313
+Tamanho: 26000 - Trocas: 2823141
+Tamanho: 27000 - Trocas: 3070760
+Tamanho: 28000 - Trocas: 3329518
+Tamanho: 29000 - Trocas: 3609204
+Tamanho: 30000 - Trocas: 3909836
+
+
+Ordenado:
+Tamanho: 10000 - Trocas: 50004999
+Tamanho: 11000 - Trocas: 110510498
+Tamanho: 12000 - Trocas: 182516497
+Tamanho: 13000 - Trocas: 267022996
+Tamanho: 14000 - Trocas: 365029995
+Tamanho: 15000 - Trocas: 477537494
+Tamanho: 16000 - Trocas: 605545493
+Tamanho: 17000 - Trocas: 750053992
+Tamanho: 18000 - Trocas: 912062991
+Tamanho: 19000 - Trocas: 1092572490
+Tamanho: 20000 - Trocas: 1292582489
+Tamanho: 21000 - Trocas: 1513092988
+Tamanho: 22000 - Trocas: 1755103987
+Tamanho: 23000 - Trocas: 2019615486
+Tamanho: 24000 - Trocas: 2307627485
+Tamanho: 25000 - Trocas: 2620139984
+Tamanho: 26000 - Trocas: 2958152983
+Tamanho: 27000 - Trocas: 3322666482
+Tamanho: 28000 - Trocas: 3714680481
+Tamanho: 29000 - Trocas: 4135194980
+Tamanho: 30000 - Trocas: 4585209979
+
+
+Inverso:
+Tamanho: 10000 - Trocas: 25004999
+Tamanho: 11000 - Trocas: 55260498
+Tamanho: 12000 - Trocas: 91266497
+Tamanho: 13000 - Trocas: 133522996
+Tamanho: 14000 - Trocas: 182529995
+Tamanho: 15000 - Trocas: 238787494
+Tamanho: 16000 - Trocas: 302795493
+Tamanho: 17000 - Trocas: 375053992
+Tamanho: 18000 - Trocas: 456062991
+Tamanho: 19000 - Trocas: 546322490
+Tamanho: 20000 - Trocas: 646332489
+Tamanho: 21000 - Trocas: 756592988
+Tamanho: 22000 - Trocas: 877603987
+Tamanho: 23000 - Trocas: 1009865486
+Tamanho: 24000 - Trocas: 1153877485
+Tamanho: 25000 - Trocas: 1310139984
+Tamanho: 26000 - Trocas: 1479152983
+Tamanho: 27000 - Trocas: 1661416482
+Tamanho: 28000 - Trocas: 1857430481
+Tamanho: 29000 - Trocas: 2067694980
+Tamanho: 30000 - Trocas: 2292709979
