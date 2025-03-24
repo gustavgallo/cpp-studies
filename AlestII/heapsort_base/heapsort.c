@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX 10
+#define MAX 100000
 
 void swim(int v[], int k);
 void put(int v[], int *size, int data);
@@ -95,8 +95,9 @@ void sort(int v[], int size)
 
     while (size > 1)
     {
-        exch(v, 1, size--);
-        sink(v, 1, size);
+        exch(v, 1, size);
+        size--;
+        sink(v, size, 1);
     }
 
 }
@@ -116,14 +117,14 @@ int main()
      print(v, size, 1, 1, 64);
      printf("\n");
 
-
+/*
      for(int i=1; i<size; i++)
     printf("%d ", v[i]);
     printf("\n");
-
+*/
     // Ordena
     long start = clock();
-    sort(v, size);
+    sort(v, size-1);
     long end = clock();
 
     printf("\nOrdenado:\n");
@@ -132,5 +133,5 @@ int main()
     printf("%d ", v[i]);
     printf("\n");
 
-    printf("Tempo para %d elementos: %ld ns\n", MAX, (end - start));
+    printf("Tempo para %d elementos: %ld s\n", MAX, (end - start));
 }
