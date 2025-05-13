@@ -16,9 +16,10 @@ Graph::Graph(string filename) {
 	if(file.is_open()) {
 		while(getline(file, line)) {
 			stringstream ss(line);
-			getline(ss, v, ' ');
-			getline(ss, w, ' ');
-  	    	addEdge(v, w);
+			getline(ss, v, '/');
+			while(getline(ss, w, '/')){
+				
+  	    		addEdge(v, w);}
     	}
     	file.close();
 	}
